@@ -1,0 +1,28 @@
+[
+  {
+    "experiment": "OFFICIAL TASK 2 \u2014 CLASSIC",
+    "scenario": "classic",
+    "agent": "project_qlearning",
+    "avg_score": 0.8333333333333334,
+    "std_score": 0.38586123009300755,
+    "survival_rate": 0.9333333333333332,
+    "avg_kills_per_game": 0.0,
+    "avg_suicides_per_game": 0.06666666666666667,
+    "total_coins": 25,
+    "total_crates": 294,
+    "avg_episode_length": 374.9666666666667
+  },
+  {
+    "experiment": "OFFICIAL TASK 2 \u2014 CLASSIC",
+    "scenario": "classic",
+    "agent": "project_dqn",
+    "avg_score": 0.2333333333333333,
+    "std_score": 0.09428090415820632,
+    "survival_rate": 0.6333333333333334,
+    "avg_kills_per_game": 0.0,
+    "avg_suicides_per_game": 0.3666666666666667,
+    "total_coins": 7,
+    "total_crates": 293,
+    "avg_episode_length": 263.5
+  }
+]

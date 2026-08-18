@@ -1,0 +1,22 @@
+# Official Submission Checklist
+
+- [x] Best agent selected (`project_dqn`)
+- [x] Two genuinely learned agents implemented (`project_qlearning` and `project_dqn`)
+- [x] Trained parameters saved (`model_data/model.pkl` and `model_data/model.pt`)
+- [x] Official Task 1 evaluated (`coin-heaven`)
+- [x] Official Task 2 evaluated on `classic` (0 opponents)
+- [x] Official Task 3 evaluated (`classic` vs passive agents)
+- [x] Official Task 4 evaluated (`classic` vs 3 `rule_based_agent`s)
+- [x] Rule-based baseline comparison completed
+- [x] CPU action decision latency benchmark completed (2.72 ms avg < 500 ms limit)
+- [x] Clean ZIP extraction completed in temporary directory (`C:\Users\pramu\AppData\Local\Temp\bomberman_zip_audit_clean`)
+- [x] Final submission ZIP contains **ONLY** best agent directory (`project_dqn/`)
+- [x] Model loads cleanly in evaluation mode (`self.train = False`)
+- [x] No absolute file paths
+- [x] No multiprocessing in final submitted agent callbacks
+- [x] README.md complete with tested installation & execution commands
+- [x] requirements.txt complete
+- [x] GitHub repository prepared (`.gitignore` excludes zip files, backups, temporary logs)
+- [x] Docker status honestly marked **UNVERIFIED** (Docker CLI unavailable on development machine)
+- [x] Scientific report data generated (`report_data/`)
+- [x] Final audit generated (`report_data/final_audit.md`)

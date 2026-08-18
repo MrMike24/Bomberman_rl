@@ -1,0 +1,33 @@
+{
+  "agent_1_qlearning": {
+    "model_type": "Tabular Q-Learning with Engineered Discretized Features",
+    "alpha": 0.1,
+    "gamma": 0.95,
+    "epsilon_start": 1.0,
+    "epsilon_decay": 0.998,
+    "epsilon_min": 0.05,
+    "reward_profile": "profile_combative_survival",
+    "state_space_size": 40000,
+    "action_space_size": 6,
+    "inference_device": "CPU (single-threaded)"
+  },
+  "agent_2_dqn": {
+    "model_type": "Deep Q-Network (PyTorch 3-Layer MLP)",
+    "input_dim": 31,
+    "hidden_dim_1": 128,
+    "hidden_dim_2": 64,
+    "num_actions": 6,
+    "learning_rate": 0.001,
+    "gamma": 0.95,
+    "batch_size": 64,
+    "replay_buffer_capacity": 50000,
+    "target_network_update_freq": 500,
+    "epsilon_start": 1.0,
+    "epsilon_decay": 0.998,
+    "epsilon_min": 0.05,
+    "optimizer": "Adam",
+    "loss_function": "SmoothL1Loss (Huber)",
+    "reward_profile": "profile_combative_survival",
+    "inference_device": "CPU (single-threaded)"
+  }
+}

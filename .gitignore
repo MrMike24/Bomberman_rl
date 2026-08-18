@@ -1,0 +1,22 @@
+# Python byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Backups and submitted archives
+backup_submission/
+*.zip
+*.pdf
+
+# Environment logs and temporary caches
+*.log
+logs/
+replays/
+results/
+.cache/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
