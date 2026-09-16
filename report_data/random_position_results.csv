@@ -1,0 +1,6 @@
+agent,configuration,spawn_coords,n_rounds,seed,avg_score,std_score,survival_rate,avg_kills_per_game,avg_suicides_per_game,total_coins,total_crates,avg_steps
+project_dqn_v2,Position_1,"(1, 1)",25,42,1.0,1.7663521732655694,0.12,0.08,0.52,15,230,349.72
+project_dqn_v2,Position_2,"(1, 15)",25,42,0.8,1.0583005244258363,0.12,0.04,0.56,15,263,327.52
+project_dqn_v2,Position_3,"(15, 1)",25,42,1.08,1.5210522673465234,0.08,0.08,0.6,17,198,347.68
+project_dqn_v2,Position_4,"(15, 15)",25,42,0.28,0.44899888641287294,0.0,0.0,0.32,7,214,330.08
+project_dqn_v2,Random_Position,Any,25,42,0.96,1.3705473359209452,0.12,0.08,0.48,14,225,341.24

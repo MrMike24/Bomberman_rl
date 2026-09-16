@@ -5,6 +5,7 @@ __pycache__/
 
 # Backups and submitted archives
 backup_submission/
+backup_baseline/
 *.zip
 *.pdf
 

@@ -9,7 +9,8 @@ def train_dqn(n_rounds=100, scenario="coin-heaven", opponents=None, reward_profi
     if opponents is None:
         opponents = ["peaceful_agent", "coin_collector_agent", "rule_based_agent"]
 
-    agent_name = "project_dqn"
+    os.makedirs("logs", exist_ok=True)
+    agent_name = os.environ.get("AGENT_NAME", "project_dqn_v2" if os.path.exists(os.path.join("agent_code", "project_dqn_v2")) else "project_dqn")
     cmd_args = [
         "play",
         "--agents", agent_name, *opponents[:s.MAX_AGENTS - 1],
@@ -22,7 +23,7 @@ def train_dqn(n_rounds=100, scenario="coin-heaven", opponents=None, reward_profi
     if seed is not None:
         cmd_args.extend(["--seed", str(seed)])
 
-    print(f"--- Training DQN | Scenario: {scenario} | Rounds: {n_rounds} | Profile: {reward_profile} ---")
+    print(f"--- Training DQN ({agent_name}) | Scenario: {scenario} | Rounds: {n_rounds} | Profile: {reward_profile} ---")
     run_main(cmd_args)
 
 

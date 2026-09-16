@@ -1,0 +1,74 @@
+[
+  {
+    "agent_folder": "project_qlearning",
+    "model_name": "Baseline Q-Learning (Model A)",
+    "scenario": "classic",
+    "total_rounds": 50,
+    "seeds": [
+      42,
+      101
+    ],
+    "avg_score": 1.82,
+    "std_score": 0.3400000000000001,
+    "survival_rate": 0.54,
+    "avg_kills_per_game": 0.12,
+    "avg_suicides_per_game": 0.36,
+    "avg_coins_per_game": 1.22,
+    "avg_crates_per_game": 13.28,
+    "avg_episode_length": 371.98
+  },
+  {
+    "agent_folder": "project_qlearning_v2",
+    "model_name": "Q-Learning v2 (Model A v2)",
+    "scenario": "classic",
+    "total_rounds": 50,
+    "seeds": [
+      42,
+      101
+    ],
+    "avg_score": 0.56,
+    "std_score": 0.2,
+    "survival_rate": 0.2,
+    "avg_kills_per_game": 0.06,
+    "avg_suicides_per_game": 0.48,
+    "avg_coins_per_game": 0.26,
+    "avg_crates_per_game": 4.92,
+    "avg_episode_length": 350.4
+  },
+  {
+    "agent_folder": "project_dqn",
+    "model_name": "Baseline DQN (Model B)",
+    "scenario": "classic",
+    "total_rounds": 50,
+    "seeds": [
+      42,
+      101
+    ],
+    "avg_score": 0.7,
+    "std_score": 0.18,
+    "survival_rate": 0.02,
+    "avg_kills_per_game": 0.04,
+    "avg_suicides_per_game": 0.66,
+    "avg_coins_per_game": 0.5,
+    "avg_crates_per_game": 10.4,
+    "avg_episode_length": 317.36
+  },
+  {
+    "agent_folder": "project_dqn_v2",
+    "model_name": "Double DQN v2 (Model B v2)",
+    "scenario": "classic",
+    "total_rounds": 50,
+    "seeds": [
+      42,
+      101
+    ],
+    "avg_score": 0.98,
+    "std_score": 0.14000000000000007,
+    "survival_rate": 0.2,
+    "avg_kills_per_game": 0.06,
+    "avg_suicides_per_game": 0.42,
+    "avg_coins_per_game": 0.68,
+    "avg_crates_per_game": 9.16,
+    "avg_episode_length": 341.1
+  }
+]

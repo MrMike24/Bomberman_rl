@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 import pickle
 import subprocess
 from collections import namedtuple
@@ -58,6 +59,7 @@ class GenericWorld:
     def setup_logging(self):
         self.logger = logging.getLogger('BombeRLeWorld')
         self.logger.setLevel(s.LOG_GAME)
+        os.makedirs(self.args.log_dir, exist_ok=True)
         handler = logging.FileHandler(f'{self.args.log_dir}/game.log', mode="w")
         handler.setLevel(logging.DEBUG)
         formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s: %(message)s')

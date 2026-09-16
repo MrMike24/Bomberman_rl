@@ -1,0 +1,5 @@
+agent_folder,model_name,scenario,total_rounds,seeds,avg_score,std_score,survival_rate,avg_kills_per_game,avg_suicides_per_game,avg_coins_per_game,avg_crates_per_game,avg_episode_length
+project_qlearning,Baseline Q-Learning (Model A),classic,50,"[42, 101]",1.82,0.3400000000000001,0.54,0.12,0.36,1.22,13.28,371.98
+project_qlearning_v2,Q-Learning v2 (Model A v2),classic,50,"[42, 101]",0.56,0.2,0.2,0.06,0.48,0.26,4.92,350.4
+project_dqn,Baseline DQN (Model B),classic,50,"[42, 101]",0.7,0.18,0.02,0.04,0.66,0.5,10.4,317.36
+project_dqn_v2,Double DQN v2 (Model B v2),classic,50,"[42, 101]",0.98,0.14000000000000007,0.2,0.06,0.42,0.68,9.16,341.1

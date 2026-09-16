@@ -7,8 +7,10 @@ import numpy as np
 # Ensure root is in python path
 sys.path.insert(0, os.path.abspath('.'))
 
-import agent_code.project_dqn.callbacks as dqn_callbacks
-import agent_code.project_qlearning.callbacks as q_callbacks
+import agent_code.project_dqn.callbacks as dqn1_callbacks
+import agent_code.project_dqn_v2.callbacks as dqn2_callbacks
+import agent_code.project_qlearning.callbacks as q1_callbacks
+import agent_code.project_qlearning_v2.callbacks as q2_callbacks
 
 
 class AgentSelf:
@@ -42,7 +44,7 @@ def create_realistic_game_state():
         'explosion_map': explosion_map,
         'bombs': bombs,
         'coins': coins,
-        'self': ('project_dqn', 10, True, (1, 1)),
+        'self': ('agent_test', 10, True, (1, 1)),
         'others': [('enemy_1', 5, True, (15, 15)), ('enemy_2', 2, False, (1, 15))],
         'user_input': None
     }
@@ -106,8 +108,10 @@ def benchmark_callbacks_act(agent_module, name, n_calls=1000):
 
 
 def main():
-    bench_dqn = benchmark_callbacks_act(dqn_callbacks, "Agent 2: project_dqn")
-    bench_q = benchmark_callbacks_act(q_callbacks, "Agent 1: project_qlearning")
+    bench_dqn2 = benchmark_callbacks_act(dqn2_callbacks, "Agent 2 (v2): project_dqn_v2")
+    bench_dqn1 = benchmark_callbacks_act(dqn1_callbacks, "Agent 2 (Baseline): project_dqn")
+    bench_q2 = benchmark_callbacks_act(q2_callbacks, "Agent 1 (v2): project_qlearning_v2")
+    bench_q1 = benchmark_callbacks_act(q1_callbacks, "Agent 1 (Baseline): project_qlearning")
 
 
 if __name__ == '__main__':
